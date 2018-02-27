@@ -6,12 +6,17 @@ def multiple_of_5(num):
         return multiple_of_5(num)
 
 def solve(n, grades):
-    # for grade in grades:
-    # if grade < 40:
-    #     print grade
-    # else:
-    t = [ x for x in [y if y%5==0 else multiple_of_5(y) for y in grades]]
-    print t
+    result = []
+    for i in grades:
+        if i >= 38:
+            t = multiple_of_5(i)
+            if t - i < 3:
+                result.append(t)
+            else:
+                result.append(i)
+        else:
+            result.append(i)
+    return result
 
 n = 4
 grades = [73, 67, 38, 33]
