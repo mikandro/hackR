@@ -2,7 +2,7 @@ from random import randint
 
 def array_manipulation(n, queries):
     il = [0 for i in xrange(n)]
-    print il.
+    print il
     for q in queries:
         for j in xrange(q[0], q[1]+1):
             il[j-1]+=q[2]
