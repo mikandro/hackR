@@ -14,3 +14,4 @@ def make_anagram(w1, w2):
     return difs + interesections
 res = make_anagram(a, b)
 print res
+
